@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: #93e5ab;
+    padding: 10px;
+
+    .to-do-container {
+      width: 100%;
+      max-width: 540px;
+      background: #f0edee;
+      margin: 100px auto 20px;
+      padding: 40px 30px 70px;
+      border-radius: 10px;
+      .to-do-title {
+        background: #b10f2e;
+        color: #fff;
+        h1 {
+          text-align: center;
+        }
+        h2 {
+          width: 40%;
+          align-items: center;
+          display: flex;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          img {
+            width: 25px;
+            margin-left: 10px;
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    .to-do-input {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 30px;
+      padding-left: 20px;
+      margin-bottom: 25px;
+
+      input {
+        background: transparent;
+        border: none;
+        outline: none;
+        flex: 1;
+        padding: 10px;
+      }
+
+      button {
+        padding: 16px 50px;
+        border: none;
+        outline: none;
+        background: #ff5945;
+        background: #b10f2e;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 40px;
+        cursor: pointer;
+      }
+    }
+
+    ul {
+      li {
+        list-style: none;
+        font-size: 17px;
+        padding: 12px 8px 12px 50px;
+        user-select: none;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          background-image: url(images/unchecked.png);
+          position: absolute;
+          height: 28px;
+          width: 28px;
+          border-radius: 50%;
+          background-size: cover;
+          background-position: center;
+          top: 12px;
+          left: 8px;
+        }
+        &.checked {
+          color: #555;
+          text-decoration: line-through;
+        }
+
+        &.checked::before {
+          background-image: url(images/checked.png);
+        }
+
+        span {
+          position: absolute;
+          right: 0;
+          top: 5px;
+          width: 40px;
+          height: 40px;
+          font-size: 22px;
+          color: #555;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 50%;
+
+          &:hover {
+            background: #edeef0;
+          }
+        }
+      }
+    }
+  }
+}
