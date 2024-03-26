@@ -23,19 +23,15 @@ body {
       .to-do-title {
         background: #b10f2e;
         color: #fff;
-        h1 {
-          text-align: center;
-        }
+        padding: 20px;
+        text-align: center;
         h2 {
-          width: 40%;
           align-items: center;
           display: flex;
-          margin: 0 auto;
           margin-bottom: 20px;
           img {
             width: 25px;
             margin-left: 10px;
-            background: transparent;
           }
         }
       }
@@ -49,6 +45,7 @@ body {
       border-radius: 30px;
       padding-left: 20px;
       margin-bottom: 25px;
+      margin-top: 20px;
 
       input {
         background: transparent;
