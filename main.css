@@ -23,21 +23,17 @@ body .container .to-do-container {
 body .container .to-do-container .to-do-title {
   background: #b10f2e;
   color: #fff;
-}
-body .container .to-do-container .to-do-title h1 {
+  padding: 20px;
   text-align: center;
 }
 body .container .to-do-container .to-do-title h2 {
-  width: 40%;
   align-items: center;
   display: flex;
-  margin: 0 auto;
   margin-bottom: 20px;
 }
 body .container .to-do-container .to-do-title h2 img {
   width: 25px;
   margin-left: 10px;
-  background: transparent;
 }
 body .container .to-do-input {
   display: flex;
@@ -47,6 +43,7 @@ body .container .to-do-input {
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
+  margin-top: 20px;
 }
 body .container .to-do-input input {
   background: transparent;
