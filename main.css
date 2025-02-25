@@ -27,9 +27,9 @@ body .container .to-do-container .to-do-title {
   text-align: center;
 }
 body .container .to-do-container .to-do-title h2 {
-  align-items: center;
-  display: flex;
+
   margin-top: 12px;
+          margin: 0 auto;
 }
 body .container .to-do-container .to-do-title h2 img {
   width: 25px;
